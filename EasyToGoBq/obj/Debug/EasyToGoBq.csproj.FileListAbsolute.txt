@@ -1,1 +1,9 @@
 D:\EasyToGoBq\EasyToGoBq\bin\Debug\EasyToGoBq.exe.config
+E:\My_Projects\C#\EasyToGoBq\EasyToGoBq\bin\Debug\EasyToGoBq.exe.config
+E:\My_Projects\C#\EasyToGoBq\EasyToGoBq\bin\Debug\EasyToGoBq.exe
+E:\My_Projects\C#\EasyToGoBq\EasyToGoBq\bin\Debug\EasyToGoBq.pdb
+E:\My_Projects\C#\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.csprojResolveAssemblyReference.cache
+E:\My_Projects\C#\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.Properties.Resources.resources
+E:\My_Projects\C#\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.csproj.GenerateResource.Cache
+E:\My_Projects\C#\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.exe
+E:\My_Projects\C#\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.pdb
