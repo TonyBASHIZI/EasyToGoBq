@@ -44,8 +44,9 @@ namespace EasyToGoBq.Forms
                 Cursor = Cursors.Default;
             }
         }
+
         /// <summary>
-        /// Navigation entre les différents User Control
+        /// Naviger dans différents User Control
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -53,7 +54,7 @@ namespace EasyToGoBq.Forms
         {
             switch (((Control)sender).Name.Substring(3))
             {
-                case "Dashboard":
+                case "Dashbord":
                     uc = new UcDashbord();
                     LoadUserControles(uc);
                     break;
@@ -63,11 +64,15 @@ namespace EasyToGoBq.Forms
                     LoadUserControles(uc);
                     break;
 
+                case "Settings":
+                    //uc = new UcReport();
+                    //LoadUserControles(uc);
+                    break;
+
                 case "User":
                     form = new FormLogin
                     {
-                        Icon = Icon,
-                        ShowInTaskbar = false
+                        Icon = Icon
                     };
                     form.ShowDialog();
                     break;
@@ -75,6 +80,48 @@ namespace EasyToGoBq.Forms
                 default:
                     uc = new UcHome();
                     LoadUserControles(uc);
+                    break;
+            }
+        }
+
+        private void Menu_MouseEnter(object sender, EventArgs e)
+        {
+            switch (((Control)sender).Name.Substring(3))
+            {
+                case "Dashbord":
+                    LblDashbord.ForeColor = Color.FromArgb(85, 183, 20);
+                    break;
+
+                case "Report":
+                    LblReport.ForeColor = Color.FromArgb(85, 183, 20);
+                    break;
+
+                case "Settings":
+                    LblSettings.ForeColor = Color.FromArgb(85, 183, 20);
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        private void Menu_MouseLeave(object sender, EventArgs e)
+        {
+            switch (((Control)sender).Name.Substring(3))
+            {
+                case "Dashbord":
+                    LblDashbord.ForeColor = Color.FromArgb(14, 23, 22);
+                    break;
+
+                case "Report":
+                    LblReport.ForeColor = Color.FromArgb(14, 23, 22);
+                    break;
+
+                case "Settings":
+                    LblSettings.ForeColor = Color.FromArgb(14, 23, 22);
+                    break;
+
+                default:
                     break;
             }
         }
