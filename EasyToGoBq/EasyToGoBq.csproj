@@ -56,10 +56,40 @@
     <Compile Include="Forms\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Views\UcDashbord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Views\UcDashbord.Designer.cs">
+      <DependentUpon>UcDashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Views\UcHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Views\UcHome.Designer.cs">
+      <DependentUpon>UcHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Views\UcReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Views\UcReport.Designer.cs">
+      <DependentUpon>UcReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Views\UcDashbord.resx">
+      <DependentUpon>UcDashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Views\UcHome.resx">
+      <DependentUpon>UcHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Views\UcReport.resx">
+      <DependentUpon>UcReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,6 +120,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

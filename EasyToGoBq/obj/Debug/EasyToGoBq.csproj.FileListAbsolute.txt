@@ -7,3 +7,16 @@ E:\My_Projects\C#\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.Properties.Resource
 E:\My_Projects\C#\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.csproj.GenerateResource.Cache
 E:\My_Projects\C#\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.exe
 E:\My_Projects\C#\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.pdb
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\bin\Debug\EasyToGoBq.exe.config
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\bin\Debug\EasyToGoBq.exe
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\bin\Debug\EasyToGoBq.pdb
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.csprojResolveAssemblyReference.cache
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormLogin.resources
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormMain.resources
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.Views.UcDashbord.resources
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.Views.UcHome.resources
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.Views.UcReport.resources
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.Properties.Resources.resources
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.csproj.GenerateResource.Cache
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.exe
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.pdb
