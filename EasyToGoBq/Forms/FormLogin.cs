@@ -35,7 +35,6 @@ namespace EasyToGoBq.Forms
                 if (ClassGlossaire.Instance.LoginTest(TxtUsername.Text, TxtPassword.Text) == true)
                 {
                     this.Close();
-
                 }
 
             }

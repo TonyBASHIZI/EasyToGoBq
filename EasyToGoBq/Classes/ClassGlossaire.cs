@@ -140,6 +140,7 @@ namespace EasyToGoBq.Classes
                 dr.Dispose();
             }
         }
+
         public string getCommission()
         {
 
@@ -172,6 +173,7 @@ namespace EasyToGoBq.Classes
 
             return c;
         }
+
         public string getTransact()
         {
 
@@ -204,6 +206,7 @@ namespace EasyToGoBq.Classes
 
             return c;
         }
+
         public string getOperation()
         {
 
@@ -236,6 +239,7 @@ namespace EasyToGoBq.Classes
 
             return c;
         }
+
         public string getCompagnieEtbq()
         {
 
@@ -268,6 +272,7 @@ namespace EasyToGoBq.Classes
 
             return c;
         }
+
         public Boolean LoginTest(string username, string password)
         {
             Boolean b = false;
@@ -276,7 +281,8 @@ namespace EasyToGoBq.Classes
             {
                 InitializeConnection();
 
-                cmd = new MySqlCommand("SELECT noms,mot_de_passe  FROM banque where noms ='" + username + "' AND mot_de_passe = '" + password + "'", con);
+                cmd = new MySqlCommand("SELECT *  FROM banque where noms ='" + username + "' AND mot_de_passe = '" + password + "'", con);
+
                 dr = cmd.ExecuteReader();
 
                 while (dr.Read())

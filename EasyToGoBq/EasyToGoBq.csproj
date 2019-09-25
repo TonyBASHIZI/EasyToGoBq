@@ -55,6 +55,11 @@
     <Compile Include="Classes\ClassConnection.cs" />
     <Compile Include="Classes\ClassConstants.cs" />
     <Compile Include="Classes\ClassGlossaire.cs" />
+    <Compile Include="Datasets\DsFicheCompte.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsFicheCompte.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +71,12 @@
     </Compile>
     <Compile Include="Forms\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRegister.Designer.cs">
+      <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Views\UcDashbord.cs">
       <SubType>UserControl</SubType>
@@ -112,6 +123,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Datasets\DsFicheCompte.xsc">
+      <DependentUpon>DsFicheCompte.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DsFicheCompte.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsFicheCompte.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datasets\DsFicheCompte.xss">
+      <DependentUpon>DsFicheCompte.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

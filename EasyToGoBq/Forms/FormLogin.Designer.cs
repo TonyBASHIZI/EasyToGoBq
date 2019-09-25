@@ -80,6 +80,7 @@
             this.PnlConnection.Name = "PnlConnection";
             this.PnlConnection.Size = new System.Drawing.Size(200, 35);
             this.PnlConnection.TabIndex = 17;
+            this.PnlConnection.Click += new System.EventHandler(this.LblConnection_Click);
             // 
             // LblConnection
             // 
@@ -170,7 +171,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(446, 281);
+            this.ClientSize = new System.Drawing.Size(462, 320);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LblError);
             this.Controls.Add(this.pictureBox1);
