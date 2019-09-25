@@ -308,6 +308,50 @@ namespace EasyToGoBq.Classes
             }
             return b;
         }
+        public DataSet sortietCompte()
+        {
+
+            try
+            {
+                InitializeConnection();
+                if (!con.State.ToString().ToLower().Equals("open")) con.Open();
+
+                cmd = new MySqlCommand("SELECT designation,description,ref_compagnie,solde from compte", con);
+                //cmd = new MySqlCommand("SELECT * from transact ", con);
+                adpr = new MySqlDataAdapter(cmd);
+                dste = new DataSet();
+                adpr.Fill(dste, "compte");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            return dste;
+        }
+        public DataSet sortieTransfert()
+        {
+
+            try
+            {
+                InitializeConnection();
+                if (!con.State.ToString().ToLower().Equals("open")) con.Open();
+
+                cmd = new MySqlCommand("SELECT designation,description,ref_compagnie,solde from compte", con);
+                //cmd = new MySqlCommand("SELECT * from transact ", con);
+                adpr = new MySqlDataAdapter(cmd);
+                dste = new DataSet();
+                adpr.Fill(dste, "compte");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            return dste;
+        }
         #endregion
     }
 }
