@@ -43,6 +43,7 @@
             this.PnlMain.Name = "PnlMain";
             this.PnlMain.Size = new System.Drawing.Size(977, 457);
             this.PnlMain.TabIndex = 0;
+            this.PnlMain.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlMain_Paint);
             // 
             // UcHome
             // 
@@ -54,6 +55,7 @@
             this.MinimumSize = new System.Drawing.Size(983, 463);
             this.Name = "UcHome";
             this.Size = new System.Drawing.Size(983, 463);
+            this.Load += new System.EventHandler(this.UcHome_Load);
             this.ResumeLayout(false);
 
         }

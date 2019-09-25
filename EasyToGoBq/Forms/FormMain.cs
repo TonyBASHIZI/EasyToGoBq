@@ -19,12 +19,15 @@ namespace EasyToGoBq.Forms
         public FormMain()
         {
             InitializeComponent();
+            FormLogin lo = new FormLogin();
+            lo.ShowDialog();
         }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
             uc = new UcHome();
             LoadUserControles(uc);
+            
         }
 
         /// <summary>

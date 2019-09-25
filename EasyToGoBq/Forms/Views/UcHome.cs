@@ -16,5 +16,16 @@ namespace EasyToGoBq.Forms.Views
         {
             InitializeComponent();
         }
+
+        private void PnlMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void UcHome_Load(object sender, EventArgs e)
+        {
+            
+
+        }
     }
 }
