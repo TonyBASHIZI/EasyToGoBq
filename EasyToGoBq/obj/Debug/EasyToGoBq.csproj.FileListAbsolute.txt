@@ -37,4 +37,4 @@ D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\bin\Debug\LiveCharts.WinF
 D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\bin\Debug\MySql.Data.dll
 D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\bin\Debug\LiveCharts.WinForms.pdb
 D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\bin\Debug\LiveCharts.WinForms.xml
-D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormRegister.resources
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormUser.resources

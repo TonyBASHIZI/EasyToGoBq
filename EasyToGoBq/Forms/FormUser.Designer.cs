@@ -1,6 +1,6 @@
 ﻿namespace EasyToGoBq.Forms
 {
-    partial class FormRegister
+    partial class FormUser
     {
         /// <summary>
         /// Required designer variable.
@@ -147,6 +147,9 @@
             this.PnlEdit.Name = "PnlEdit";
             this.PnlEdit.Size = new System.Drawing.Size(136, 32);
             this.PnlEdit.TabIndex = 22;
+            this.PnlEdit.Click += new System.EventHandler(this.Controles_Click);
+            this.PnlEdit.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
+            this.PnlEdit.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
             // 
             // LblEdit
             // 
@@ -160,6 +163,9 @@
             this.LblEdit.Size = new System.Drawing.Size(69, 18);
             this.LblEdit.TabIndex = 0;
             this.LblEdit.Text = "Modifier";
+            this.LblEdit.Click += new System.EventHandler(this.Controles_Click);
+            this.LblEdit.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
+            this.LblEdit.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
             // 
             // PnlCancel
             // 
@@ -171,6 +177,9 @@
             this.PnlCancel.Name = "PnlCancel";
             this.PnlCancel.Size = new System.Drawing.Size(136, 32);
             this.PnlCancel.TabIndex = 23;
+            this.PnlCancel.Click += new System.EventHandler(this.Controles_Click);
+            this.PnlCancel.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
+            this.PnlCancel.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
             // 
             // LblCancel
             // 
@@ -184,6 +193,9 @@
             this.LblCancel.Size = new System.Drawing.Size(65, 18);
             this.LblCancel.TabIndex = 0;
             this.LblCancel.Text = "Annuler";
+            this.LblCancel.Click += new System.EventHandler(this.Controles_Click);
+            this.LblCancel.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
+            this.LblCancel.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
             // 
             // groupBox1
             // 
@@ -221,6 +233,7 @@
             this.PcbNewPassword2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PcbNewPassword2.TabIndex = 26;
             this.PcbNewPassword2.TabStop = false;
+            this.PcbNewPassword2.Click += new System.EventHandler(this.ShowPassword_Click);
             // 
             // PcbNewPassword1
             // 
@@ -232,6 +245,7 @@
             this.PcbNewPassword1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PcbNewPassword1.TabIndex = 25;
             this.PcbNewPassword1.TabStop = false;
+            this.PcbNewPassword1.Click += new System.EventHandler(this.ShowPassword_Click);
             // 
             // PcbLastPassword
             // 
@@ -243,8 +257,9 @@
             this.PcbLastPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PcbLastPassword.TabIndex = 24;
             this.PcbLastPassword.TabStop = false;
+            this.PcbLastPassword.Click += new System.EventHandler(this.ShowPassword_Click);
             // 
-            // FormRegister
+            // FormUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -254,7 +269,7 @@
             this.MaximumSize = new System.Drawing.Size(418, 324);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(418, 324);
-            this.Name = "FormRegister";
+            this.Name = "FormUser";
             this.Text = "Paramètre";
             this.Load += new System.EventHandler(this.FormRegister_Load);
             this.PnlEdit.ResumeLayout(false);

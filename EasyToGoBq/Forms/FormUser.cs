@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace EasyToGoBq.Forms
 {
-    public partial class FormRegister : Form
+    public partial class FormUser : Form
     {
         private string password = null;
         private User user = null;
 
-        public FormRegister()
+        public FormUser()
         {
             InitializeComponent();
         }

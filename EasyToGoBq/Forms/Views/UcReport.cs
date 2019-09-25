@@ -18,34 +18,54 @@ namespace EasyToGoBq.Forms.Views
             InitializeComponent();
         }
 
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void UcReport_Load(object sender, EventArgs e)
         {
             Glossaire.Instance.GetDatas(GridView, "*", "transaction");
         }
 
-        private void pictureBox2_MouseEnter(object sender, EventArgs e)
+
+        /// <summary>
+        /// Impression de repports
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ControleReport_Click(object sender, EventArgs e)
         {
-            label2.BackColor = Color.Black;
+
         }
 
-        private void pictureBox2_MouseLeave(object sender, EventArgs e)
+        private void Menu_MouseEnter(object sender, EventArgs e)
         {
-            label2.BackColor = Color.Transparent;
+            switch (((Control)sender).Name.Substring(3))
+            {
+                case "Transfert":
+                    LblTransfert.ForeColor = Color.FromArgb(85, 183, 20);
+                    break;
+
+                case "Compte":
+                    LblCompte.ForeColor = Color.FromArgb(85, 183, 20);
+                    break;
+
+                default:
+                    break;
+            }
         }
 
-        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        private void Menu_MouseLeave(object sender, EventArgs e)
         {
-            label1.BackColor = Color.Black;
-        }
+            switch (((Control)sender).Name.Substring(3))
+            {
+                case "Transfert":
+                    LblTransfert.ForeColor = Color.FromArgb(14, 23, 22);
+                    break;
 
-        private void pictureBox1_MouseLeave(object sender, EventArgs e)
-        {
-            label1.BackColor = Color.Transparent;
+                case "Compte":
+                    LblCompte.ForeColor = Color.FromArgb(14, 23, 22);
+                    break;
+
+                default:
+                    break;
+            }
         }
     }
 }

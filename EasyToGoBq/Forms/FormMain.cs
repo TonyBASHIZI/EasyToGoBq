@@ -1,13 +1,7 @@
 ﻿using EasyToGoBq.Classes;
 using EasyToGoBq.Forms.Views;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EasyToGoBq.Forms
@@ -21,8 +15,6 @@ namespace EasyToGoBq.Forms
         public FormMain()
         {
             InitializeComponent();
-            //FormLogin lo = new FormLogin();
-            //lo.ShowDialog();
         }
 
         public static FormMain Instance
@@ -112,7 +104,7 @@ namespace EasyToGoBq.Forms
                     break;
 
                 case "Settings":
-                    form = new FormRegister
+                    form = new FormUser
                     {
                         Icon = Icon,
                         ShowInTaskbar = false,
@@ -123,11 +115,20 @@ namespace EasyToGoBq.Forms
                     break;
 
                 case "Connection":
-                    form = new FormLogin(this)
+
+                    if (LblConnection.Text == "Connexion")
                     {
-                        Icon = Icon
-                    };
-                    form.ShowDialog();
+                        form = new FormLogin(this)
+                        {
+                            Icon = Icon
+                        };
+                        form.ShowDialog(this);
+                    }
+                    else
+                    {
+                        RefreshOnlineStatus(true);
+                    }
+
                     break;
 
                 default:

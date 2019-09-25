@@ -153,8 +153,7 @@
             this.PnlCountBord.Location = new System.Drawing.Point(0, 177);
             this.PnlCountBord.Name = "PnlCountBord";
             this.PnlCountBord.Size = new System.Drawing.Size(970, 35);
-            this.PnlCountBord.TabIndex = 1;
-            this.PnlCountBord.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlCountBord_Paint);
+            this.PnlCountBord.TabIndex = 1;       
             // 
             // PnlBord
             // 

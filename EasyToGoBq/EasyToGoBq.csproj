@@ -73,11 +73,11 @@
     <Compile Include="Forms\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormRegister.cs">
+    <Compile Include="Forms\FormUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormRegister.Designer.cs">
-      <DependentUpon>FormRegister.cs</DependentUpon>
+    <Compile Include="Forms\FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Views\UcDashbord.cs">
       <SubType>UserControl</SubType>
@@ -105,8 +105,8 @@
     <EmbeddedResource Include="Forms\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormRegister.resx">
-      <DependentUpon>FormRegister.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Views\UcDashbord.resx">
       <DependentUpon>UcDashbord.cs</DependentUpon>

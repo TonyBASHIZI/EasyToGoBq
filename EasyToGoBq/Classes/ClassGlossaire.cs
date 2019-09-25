@@ -338,6 +338,11 @@ namespace EasyToGoBq.Classes
             return dste;
         }
 
+        /// <summary>
+        /// Modifier le mot de passe de utilisateur de la banque
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public bool UpdateUser(User user)
         {
             InitializeConnection();
@@ -346,10 +351,10 @@ namespace EasyToGoBq.Classes
             {
                 if (user.Id == 0)
                 {
-                    cmd.CommandText = "UPDATE `easy_to_go`.`banque` SET `password` = @password " +
+                    cmd.CommandText = "UPDATE `easy_to_go`.`banque` SET `mot_de_passe` = @password " +
                         " WHERE `id` = @idUser; ";
 
-                    SetParameter(cmd, "@id", DbType.Int32, 10, User.Instance.IdSession);
+                    SetParameter(cmd, "@idUser", DbType.Int32, 10, User.Instance.IdSession);
                     SetParameter(cmd, "@password", DbType.String, 255, user.Password);
                 }
 

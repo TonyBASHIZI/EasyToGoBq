@@ -24,6 +24,8 @@ namespace EasyToGoBq.Forms
 
         private void LblConnection_Click(object sender, EventArgs e)
         {
+            Cursor = Cursors.WaitCursor;
+
             if (TxtUsername.Text == "" || TxtPassword.Text == "")
             {
                 MessageBox.Show("Remplissez tous les champs");
@@ -45,7 +47,7 @@ namespace EasyToGoBq.Forms
                 }
 
             }
-           
+            Cursor = Cursors.Default;
         }
 
         private void FormLogin_FormClosing(object sender, FormClosingEventArgs e)
