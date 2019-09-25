@@ -108,8 +108,7 @@ namespace EasyToGoBq.Forms
                     {
                         Icon = Icon,
                         ShowInTaskbar = false,
-                        StartPosition = FormStartPosition.CenterScreen
-                        
+                        StartPosition = FormStartPosition.CenterScreen                        
                     };
                     form.ShowDialog();
                     break;

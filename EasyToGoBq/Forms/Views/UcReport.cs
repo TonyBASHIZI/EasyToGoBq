@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using EasyToGoBq.Classes;
 
@@ -13,6 +7,8 @@ namespace EasyToGoBq.Forms.Views
 {
     public partial class UcReport : UserControl
     {
+        private Form form = null;
+
         public UcReport()
         {
             InitializeComponent();
@@ -31,7 +27,23 @@ namespace EasyToGoBq.Forms.Views
         /// <param name="e"></param>
         private void ControleReport_Click(object sender, EventArgs e)
         {
+            switch (((Control)sender).Name.Substring(3))
+            {
+                case "Transfert":
+                    form = new FormReport(1);
+                    form.ShowInTaskbar = false;
+                    form.ShowDialog();
+                    break;
 
+                case "Compte":
+                    form = new FormReport(2);
+                    form.ShowInTaskbar = false;
+                    form.ShowDialog();
+                    break;
+
+                default:
+                    break;
+            }
         }
 
         private void Menu_MouseEnter(object sender, EventArgs e)
