@@ -25,7 +25,7 @@ namespace EasyToGoBq.Forms.Views
 
         private void UcReport_Load(object sender, EventArgs e)
         {
-            ClassGlossaire.Instance.GetDatas(GridView, "*", "transaction");
+            Glossaire.Instance.GetDatas(GridView, "*", "transaction");
         }
 
         private void pictureBox2_MouseEnter(object sender, EventArgs e)

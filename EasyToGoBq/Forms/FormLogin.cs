@@ -14,14 +14,12 @@ namespace EasyToGoBq.Forms
 {
     public partial class FormLogin : Form
     {
-        public FormLogin()
+        private FormMain main = new FormMain();
+
+        public FormLogin(FormMain parent)
         {
             InitializeComponent();
-        }
-
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
-
+            main = parent;
         }
 
         private void LblConnection_Click(object sender, EventArgs e)
@@ -32,9 +30,18 @@ namespace EasyToGoBq.Forms
             }
             else
             {
-                if (ClassGlossaire.Instance.LoginTest(TxtUsername.Text, TxtPassword.Text) == true)
+                User.Instance = Glossaire.Instance.LoginTest(TxtUsername.Text, TxtPassword.Text);
+
+                if (!string.IsNullOrEmpty(User.Instance.UsernameSession))
                 {
+                    User.Instance.UpdateFormMain();
+                    this.main.RefreshOnlineStatus();
                     this.Close();
+                }
+                else
+                {
+                    LblError.Text = "Echec de Connexion mot de passe incorrect";
+
                 }
 
             }

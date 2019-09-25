@@ -20,11 +20,11 @@ namespace EasyToGoBq.Forms.Views
 
         private void UcDashbord_Load(object sender, EventArgs e)
         {
-            LblAlohaDynamics.Text = ClassGlossaire.Instance.getCommission();
-            LblTransactions.Text = ClassGlossaire.Instance.getTransact();
-            LblOpreration.Text = ClassGlossaire.Instance.getOperation();
-            LblCompany.Text = ClassGlossaire.Instance.getCompagnieEtbq();
-            ClassGlossaire.Instance.GetDatas(GridView, "designation,ref_compagnie,solde,etat", "compte");
+            LblAlohaDynamics.Text = Glossaire.Instance.getCommission();
+            LblTransactions.Text = Glossaire.Instance.getTransact();
+            LblOpreration.Text = Glossaire.Instance.getOperation();
+            LblCompany.Text = Glossaire.Instance.getCompagnieEtbq();
+            Glossaire.Instance.GetDatas(GridView, "designation,ref_compagnie,solde,etat", "compte");
             
         }
 

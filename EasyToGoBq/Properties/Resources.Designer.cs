@@ -73,6 +73,16 @@ namespace EasyToGoBq.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hint {
+            get {
+                object obj = ResourceManager.GetObject("hint", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Print_48px {
             get {
                 object obj = ResourceManager.GetObject("icons8_Print_48px", resourceCulture);

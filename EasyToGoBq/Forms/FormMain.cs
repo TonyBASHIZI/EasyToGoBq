@@ -1,4 +1,5 @@
-﻿using EasyToGoBq.Forms.Views;
+﻿using EasyToGoBq.Classes;
+using EasyToGoBq.Forms.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,21 +14,40 @@ namespace EasyToGoBq.Forms
 {
     public partial class FormMain : Form
     {
+        private static FormMain main;
         private UserControl uc = null;
         private Form form = null;
 
         public FormMain()
         {
             InitializeComponent();
-            FormLogin lo = new FormLogin();
-            lo.ShowDialog();
+            //FormLogin lo = new FormLogin();
+            //lo.ShowDialog();
+        }
+
+        public static FormMain Instance
+        {
+            get
+            {
+                if (main == null)
+                {
+                    main = new FormMain();
+                }
+
+                return main;
+            }
+
+            set
+            {
+                value = main;
+            }
         }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
             uc = new UcHome();
             LoadUserControles(uc);
-            
+            RefreshOnlineStatus();
         }
 
         /// <summary>
@@ -45,6 +65,30 @@ namespace EasyToGoBq.Forms
             if (uc.Visible == true)
             {
                 Cursor = Cursors.Default;
+            }
+        }
+
+        /// <summary>
+        /// Raffraichit le formulaire après connexion et déconnexion
+        /// </summary>
+        /// <param name="autologout"></param>
+        public void RefreshOnlineStatus(bool autologout = false)
+        {
+            if (User.Instance.IsAuthenticate() && autologout == false)
+            {
+                TblLayoutPanelMenu.Enabled = true;
+                LblConnection.Text = "Déconnexion";
+                LblStatus.Text = User.Instance.UsernameSession;
+            }
+            else
+            {
+                User.Instance = null;
+
+                uc = new UcHome();
+                LoadUserControles(uc);
+                TblLayoutPanelMenu.Enabled = false;
+                LblStatus.Text = "Invité";
+                LblConnection.Text = "Connexion";
             }
         }
 
@@ -68,12 +112,18 @@ namespace EasyToGoBq.Forms
                     break;
 
                 case "Settings":
-                    //uc = new UcReport();
-                    //LoadUserControles(uc);
+                    form = new FormRegister
+                    {
+                        Icon = Icon,
+                        ShowInTaskbar = false,
+                        StartPosition = FormStartPosition.CenterScreen
+                        
+                    };
+                    form.ShowDialog();
                     break;
 
-                case "User":
-                    form = new FormLogin
+                case "Connection":
+                    form = new FormLogin(this)
                     {
                         Icon = Icon
                     };

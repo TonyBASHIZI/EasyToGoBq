@@ -12,7 +12,7 @@ using System.Collections;
 
 namespace EasyToGoBq.Classes
 {
-    class ClassGlossaire
+    public class Glossaire
     {
         MySqlConnection con = null;
         MySqlCommand cmd = null;
@@ -28,13 +28,14 @@ namespace EasyToGoBq.Classes
 
         private string port;
         // private string str, code_isn;
-        private static ClassGlossaire _instance = null;
-        public static ClassGlossaire Instance
+        private static Glossaire _instance = null;
+
+        public static Glossaire Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new ClassGlossaire();
+                    _instance = new Glossaire();
                 return _instance;
             }
         }
@@ -273,9 +274,9 @@ namespace EasyToGoBq.Classes
             return c;
         }
 
-        public Boolean LoginTest(string username, string password)
+        public User LoginTest(string username, string password)
         {
-            Boolean b = false;
+            User user = null;
 
             try
             {
@@ -285,28 +286,34 @@ namespace EasyToGoBq.Classes
 
                 dr = cmd.ExecuteReader();
 
-                while (dr.Read())
+                if (dr.Read())
                 {
-                    b = true;
+                    user = new User
+                    {
+                        IdSession = Convert.ToInt32(dr["id"]),
+                        UsernameSession = dr["noms"].ToString(),
+                        PasswordSession = dr["mot_de_passe"].ToString()
+                    };
                 }
 
-                if (b == true)
-                {
+                //if (b == true)
+                //{
                   
-                    b = true;
+                //    b = true;
 
-                }
-                else
-                {
-                    MessageBox.Show("Echec de Connexion mot de passe ou utilisateur introuvable");
-                    b = false;
-                }
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Echec de Connexion mot de passe ou utilisateur introuvable");
+                //    b = false;
+                //}
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            return b;
+
+            return user;
         }
         public DataSet sortietCompte()
         {
@@ -330,6 +337,26 @@ namespace EasyToGoBq.Classes
 
             return dste;
         }
+
+        public bool UpdateUser(User user)
+        {
+            InitializeConnection();
+
+            using (cmd = con.CreateCommand())
+            {
+                if (user.Id == 0)
+                {
+                    cmd.CommandText = "UPDATE `easy_to_go`.`banque` SET `password` = @password " +
+                        " WHERE `id` = @idUser; ";
+
+                    SetParameter(cmd, "@id", DbType.Int32, 10, User.Instance.IdSession);
+                    SetParameter(cmd, "@password", DbType.String, 255, user.Password);
+                }
+
+                return cmd.ExecuteNonQuery() != 0 ? true : false;
+            }
+        }
+
         public DataSet sortieTransfert()
         {
 
