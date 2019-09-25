@@ -24,8 +24,13 @@ namespace EasyToGoBq.Forms.Views
             LblTransactions.Text = ClassGlossaire.Instance.getTransact();
             LblOpreration.Text = ClassGlossaire.Instance.getOperation();
             LblCompany.Text = ClassGlossaire.Instance.getCompagnieEtbq();
-            ClassGlossaire.Instance.GetDatas(GridView, "*", "compte");
+            ClassGlossaire.Instance.GetDatas(GridView, "designation,ref_compagnie,solde,etat", "compte");
             
+        }
+
+        private void PnlCountBord_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
