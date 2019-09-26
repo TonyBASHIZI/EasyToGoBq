@@ -459,6 +459,38 @@ namespace EasyToGoBq.Classes
             return c;
 
         }
+
+        public string getAgence(string compagnie)
+        {
+            string c = "";
+            try
+            {
+
+                InitializeConnection();
+
+                string q = "select solde as nb from compte where designation ='" + compagnie + "'";
+                cmd = new MySqlCommand(q, con);
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    c = dr.GetString("nb");
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                cmd.Dispose();
+                con.Close();
+            }
+
+
+            return c;
+        }
         #endregion
     }
 }

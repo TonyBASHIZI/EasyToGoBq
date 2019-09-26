@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -63,7 +64,7 @@
             this.dsgsdf = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LblRecharge = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.PnlBus = new System.Windows.Forms.Panel();
@@ -78,6 +79,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timerDash = new System.Windows.Forms.Timer(this.components);
             this.PnlMain.SuspendLayout();
             this.PnlMainBord.SuspendLayout();
             this.PnlFooter.SuspendLayout();
@@ -174,6 +176,7 @@
             this.GridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridView.Size = new System.Drawing.Size(970, 201);
             this.GridView.TabIndex = 2;
+            this.GridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridView_CellContentClick);
             // 
             // PnlCountBord
             // 
@@ -508,7 +511,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(184)))), ((int)(((byte)(219)))));
-            this.panel7.Controls.Add(this.label1);
+            this.panel7.Controls.Add(this.LblRecharge);
             this.panel7.Controls.Add(this.pictureBox8);
             this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.label12);
@@ -518,16 +521,17 @@
             this.panel7.Size = new System.Drawing.Size(180, 136);
             this.panel7.TabIndex = 5;
             // 
-            // label1
+            // LblRecharge
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(8, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 24);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "0";
+            this.LblRecharge.AutoSize = true;
+            this.LblRecharge.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRecharge.ForeColor = System.Drawing.Color.White;
+            this.LblRecharge.Location = new System.Drawing.Point(8, 47);
+            this.LblRecharge.Name = "LblRecharge";
+            this.LblRecharge.Size = new System.Drawing.Size(22, 24);
+            this.LblRecharge.TabIndex = 4;
+            this.LblRecharge.Text = "0";
+            this.LblRecharge.Click += new System.EventHandler(this.LblRecharge_Click);
             // 
             // label4
             // 
@@ -636,7 +640,7 @@
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::EasyToGoBq.Properties.Resources.logo1;
-            this.pictureBox2.Location = new System.Drawing.Point(116, 47);
+            this.pictureBox2.Location = new System.Drawing.Point(160, 50);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(47, 35);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -648,7 +652,7 @@
             this.PcbOperation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PcbOperation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PcbOperation.Image = global::EasyToGoBq.Properties.Resources.logo1;
-            this.PcbOperation.Location = new System.Drawing.Point(93, 46);
+            this.PcbOperation.Location = new System.Drawing.Point(130, 47);
             this.PcbOperation.Name = "PcbOperation";
             this.PcbOperation.Size = new System.Drawing.Size(47, 35);
             this.PcbOperation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -660,7 +664,7 @@
             // 
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.Image = global::EasyToGoBq.Properties.Resources.logo1;
-            this.pictureBox4.Location = new System.Drawing.Point(129, 86);
+            this.pictureBox4.Location = new System.Drawing.Point(129, 47);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(47, 35);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -671,7 +675,7 @@
             // 
             this.pictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox8.Image = global::EasyToGoBq.Properties.Resources.logo1;
-            this.pictureBox8.Location = new System.Drawing.Point(93, 46);
+            this.pictureBox8.Location = new System.Drawing.Point(130, 47);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(47, 35);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -682,12 +686,16 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::EasyToGoBq.Properties.Resources.logo1;
-            this.pictureBox1.Location = new System.Drawing.Point(85, 47);
+            this.pictureBox1.Location = new System.Drawing.Point(129, 47);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(47, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            // 
+            // timerDash
+            // 
+            this.timerDash.Tick += new System.EventHandler(this.timerDash_Tick);
             // 
             // UcDashbord
             // 
@@ -783,9 +791,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LblRecharge;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Timer timerDash;
     }
 }

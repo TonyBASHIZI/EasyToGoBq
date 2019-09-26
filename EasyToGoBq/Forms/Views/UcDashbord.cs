@@ -6,6 +6,7 @@ namespace EasyToGoBq.Forms.Views
 {
     public partial class UcDashbord : UserControl
     {
+        int cmpt = 0;
         private Form form = null;
 
         public UcDashbord()
@@ -18,7 +19,12 @@ namespace EasyToGoBq.Forms.Views
             LblAlohaDynamics.Text = Glossaire.Instance.getCommission();
             LblTransactions.Text = Glossaire.Instance.getTransact();
             LblOpreration.Text = Glossaire.Instance.getOperation();
-            LblCompany.Text = Glossaire.Instance.getCompagnieEtbq();
+            LblCompany.Text = Glossaire.Instance.getSoldes();
+            LblRecharge.Text = Glossaire.Instance.getTotalRecharge();
+            LblCountEspritDeVie.Text = Glossaire.Instance.getAgence("ESPRIT DE VIE");
+            LblCountTranskin.Text = Glossaire.Instance.getAgence("TRANSKIN");
+            LblCountTranco.Text = Glossaire.Instance.getAgence("TRANSCO");
+
             Glossaire.Instance.GetDatas(GridView, "designation,ref_compagnie,solde,etat", "compte");          
         }
 
@@ -32,6 +38,39 @@ namespace EasyToGoBq.Forms.Views
                 default:
                     break;
             }
+        }
+
+        private void GridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void LblRecharge_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timerDash_Tick(object sender, EventArgs e)
+        {
+            timerDash.Enabled = true;
+            cmpt += 1;
+            if(cmpt == 3000)
+            {
+                LblAlohaDynamics.Text = Glossaire.Instance.getCommission();
+                LblTransactions.Text = Glossaire.Instance.getTransact();
+                LblOpreration.Text = Glossaire.Instance.getOperation();
+                LblCompany.Text = Glossaire.Instance.getSoldes();
+                LblRecharge.Text = Glossaire.Instance.getTotalRecharge();
+                LblCountEspritDeVie.Text = Glossaire.Instance.getAgence("ESPRIT DE VIE");
+                LblCountTranskin.Text = Glossaire.Instance.getAgence("TRANSKIN");
+                LblCountTranco.Text = Glossaire.Instance.getAgence("TRANSCO");
+
+                Glossaire.Instance.GetDatas(GridView, "designation,ref_compagnie,solde,etat", "compte");
+
+                cmpt = 0;
+                     
+            }
+
         }
     }
 }
