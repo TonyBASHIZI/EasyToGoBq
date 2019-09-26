@@ -384,6 +384,81 @@ namespace EasyToGoBq.Classes
 
             return dste;
         }
+
+        public string getTotalRecharge()
+        {
+            string c = "";
+            try
+            {
+
+                InitializeConnection();
+
+                string q = "select SUM(solde) as nb from agent";
+                cmd = new MySqlCommand(q, con);
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    c = dr.GetString("nb");
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                cmd.Dispose();
+                con.Close();
+            }
+
+
+            return c;
+        }
+        public string getSoldes()
+        {
+            double rach = double.Parse(getTotalRecharge());
+            double opera = double.Parse(getOperation());
+
+            double solde = rach - opera;
+
+
+            return ""+solde;
+        }
+
+        public string getA(string compagnie)
+        {
+            string c = "";
+            try
+            {
+
+                InitializeConnection();
+
+                string q = "select SUM(solde) as nb where designation='"+compagnie+"'from agent";
+                cmd = new MySqlCommand(q, con);
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    c = dr.GetString("nb");
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                cmd.Dispose();
+                con.Close();
+            }
+
+
+            return c;
+
+        }
         #endregion
     }
 }

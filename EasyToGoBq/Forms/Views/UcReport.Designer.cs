@@ -28,18 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UcReport));
             this.PnlMain = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.GridView = new System.Windows.Forms.DataGridView();
-            this.design = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.compagn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soldes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.etats = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.PnlCompte = new System.Windows.Forms.Panel();
             this.PcbCompte = new System.Windows.Forms.PictureBox();
@@ -101,56 +97,31 @@
             this.GridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.GridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.design,
-            this.compagn,
-            this.soldes,
-            this.etats});
             this.GridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GridView.Location = new System.Drawing.Point(3, 18);
             this.GridView.Name = "GridView";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
-            this.GridView.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
+            this.GridView.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.GridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridView.Size = new System.Drawing.Size(965, 332);
             this.GridView.TabIndex = 1;
-            // 
-            // design
-            // 
-            this.design.HeaderText = "Nom du compte";
-            this.design.Name = "design";
-            // 
-            // compagn
-            // 
-            this.compagn.HeaderText = "Numero du compte";
-            this.compagn.Name = "compagn";
-            // 
-            // soldes
-            // 
-            this.soldes.HeaderText = "Solde";
-            this.soldes.Name = "soldes";
-            // 
-            // etats
-            // 
-            this.etats.HeaderText = "Etat";
-            this.etats.Name = "etats";
             // 
             // groupBox2
             // 
@@ -200,9 +171,9 @@
             this.LblCompte.ForeColor = System.Drawing.Color.Black;
             this.LblCompte.Location = new System.Drawing.Point(15, 4);
             this.LblCompte.Name = "LblCompte";
-            this.LblCompte.Size = new System.Drawing.Size(122, 16);
+            this.LblCompte.Size = new System.Drawing.Size(116, 16);
             this.LblCompte.TabIndex = 2;
-            this.LblCompte.Text = "FICHE DES COMPTES";
+            this.LblCompte.Text = "FICHE DE COMPTES";
             this.LblCompte.Click += new System.EventHandler(this.ControleReport_Click);
             this.LblCompte.MouseEnter += new System.EventHandler(this.Menu_MouseEnter);
             this.LblCompte.MouseLeave += new System.EventHandler(this.Menu_MouseLeave);
@@ -244,9 +215,9 @@
             this.LblTransfert.ForeColor = System.Drawing.Color.Black;
             this.LblTransfert.Location = new System.Drawing.Point(10, 4);
             this.LblTransfert.Name = "LblTransfert";
-            this.LblTransfert.Size = new System.Drawing.Size(129, 16);
+            this.LblTransfert.Size = new System.Drawing.Size(123, 16);
             this.LblTransfert.TabIndex = 0;
-            this.LblTransfert.Text = "FICHE DES TRANFERTS";
+            this.LblTransfert.Text = "FICHE DE TRANFERTS";
             this.LblTransfert.Click += new System.EventHandler(this.ControleReport_Click);
             this.LblTransfert.MouseEnter += new System.EventHandler(this.Menu_MouseEnter);
             this.LblTransfert.MouseLeave += new System.EventHandler(this.Menu_MouseLeave);
@@ -284,10 +255,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView GridView;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn design;
-        private System.Windows.Forms.DataGridViewTextBoxColumn compagn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soldes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn etats;
         private System.Windows.Forms.Panel PnlCompte;
         private System.Windows.Forms.PictureBox PcbCompte;
         private System.Windows.Forms.Label LblCompte;

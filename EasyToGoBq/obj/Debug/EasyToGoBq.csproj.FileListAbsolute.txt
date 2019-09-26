@@ -53,3 +53,7 @@ D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\bin\Debug\zh-Hant\Microso
 D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormReport.resources
 D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\RdlCompile.cache
 D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\RdlCompile.compiled
+D:\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormReport.resources
+D:\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormUser.resources
+D:\EasyToGoBq\EasyToGoBq\obj\Debug\RdlCompile.cache
+D:\EasyToGoBq\EasyToGoBq\obj\Debug\RdlCompile.compiled
