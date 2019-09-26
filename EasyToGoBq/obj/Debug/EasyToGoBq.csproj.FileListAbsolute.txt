@@ -58,3 +58,5 @@ D:\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormUser.resources
 D:\EasyToGoBq\EasyToGoBq\obj\Debug\RdlCompile.cache
 D:\EasyToGoBq\EasyToGoBq\obj\Debug\RdlCompile.compiled
 D:\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormTable.resources
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormRecharge.resources
+D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormTable.resources
