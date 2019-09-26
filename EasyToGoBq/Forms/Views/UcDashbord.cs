@@ -6,6 +6,8 @@ namespace EasyToGoBq.Forms.Views
 {
     public partial class UcDashbord : UserControl
     {
+        private Form form = null;
+
         public UcDashbord()
         {
             InitializeComponent();
@@ -18,6 +20,18 @@ namespace EasyToGoBq.Forms.Views
             LblOpreration.Text = Glossaire.Instance.getOperation();
             LblCompany.Text = Glossaire.Instance.getCompagnieEtbq();
             Glossaire.Instance.GetDatas(GridView, "designation,ref_compagnie,solde,etat", "compte");          
+        }
+
+        private void LoadForms_Click(object sender, EventArgs e)
+        {
+            switch (((Control)sender).Name.Substring(3))
+            {
+                case "Operation":
+
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
