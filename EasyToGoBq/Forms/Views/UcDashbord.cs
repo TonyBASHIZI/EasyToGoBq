@@ -52,10 +52,10 @@ namespace EasyToGoBq.Forms.Views
 
         private void timerDash_Tick(object sender, EventArgs e)
         {
-            timerDash.Enabled = true;
             cmpt += 1;
             if(cmpt == 3000)
             {
+                
                 LblAlohaDynamics.Text = Glossaire.Instance.getCommission();
                 LblTransactions.Text = Glossaire.Instance.getTransact();
                 LblOpreration.Text = Glossaire.Instance.getOperation();
@@ -66,11 +66,32 @@ namespace EasyToGoBq.Forms.Views
                 LblCountTranco.Text = Glossaire.Instance.getAgence("TRANSCO");
 
                 Glossaire.Instance.GetDatas(GridView, "designation,ref_compagnie,solde,etat", "compte");
-
+                timerDash.Enabled = false;
                 cmpt = 0;
-                     
+
             }
 
+            timerDash.Enabled = true;             
+       
+
         }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            FormListener lis = new FormListener();
+            lis.ShowDialog();
+        }
+
+
     }
 }

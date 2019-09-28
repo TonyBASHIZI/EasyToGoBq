@@ -130,6 +130,14 @@ namespace EasyToGoBq.Forms
 
                     break;
 
+                case "Recharge":
+                    form = new FormRecharge
+                    {
+                        Icon = Icon
+                    };
+                    form.ShowDialog(this);
+                    break;
+
                 default:
                     uc = new UcHome();
                     LoadUserControles(uc);
@@ -146,11 +154,11 @@ namespace EasyToGoBq.Forms
                     break;
 
                 case "Report":
-                    LblReport.ForeColor = Color.FromArgb(85, 183, 20);
+                    LblRecharge.ForeColor = Color.FromArgb(85, 183, 20);
                     break;
 
                 case "Settings":
-                    LblSettings.ForeColor = Color.FromArgb(85, 183, 20);
+                    LblRecharge.ForeColor = Color.FromArgb(85, 183, 20);
                     break;
 
                 default:
@@ -167,11 +175,11 @@ namespace EasyToGoBq.Forms
                     break;
 
                 case "Report":
-                    LblReport.ForeColor = Color.FromArgb(14, 23, 22);
+                    LblRecharge.ForeColor = Color.FromArgb(14, 23, 22);
                     break;
 
                 case "Settings":
-                    LblSettings.ForeColor = Color.FromArgb(14, 23, 22);
+                    LblRecharge.ForeColor = Color.FromArgb(14, 23, 22);
                     break;
 
                 default:

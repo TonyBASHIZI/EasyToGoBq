@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.PnlHeader = new System.Windows.Forms.Panel();
             this.PnlConnection = new System.Windows.Forms.Panel();
             this.LblConnection = new System.Windows.Forms.Label();
@@ -39,6 +40,9 @@
             this.PnlReport = new System.Windows.Forms.Panel();
             this.LblReport = new System.Windows.Forms.Label();
             this.PcbReport = new System.Windows.Forms.PictureBox();
+            this.PnlRecharge = new System.Windows.Forms.Panel();
+            this.LblRecharge = new System.Windows.Forms.Label();
+            this.PcbRecharge = new System.Windows.Forms.PictureBox();
             this.PnlSettings = new System.Windows.Forms.Panel();
             this.LblSettings = new System.Windows.Forms.Label();
             this.PcbSettings = new System.Windows.Forms.PictureBox();
@@ -53,6 +57,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PcbDashbord)).BeginInit();
             this.PnlReport.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcbReport)).BeginInit();
+            this.PnlRecharge.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PcbRecharge)).BeginInit();
             this.PnlSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcbSettings)).BeginInit();
             this.StatusStrip.SuspendLayout();
@@ -103,24 +109,26 @@
             this.panel1.Controls.Add(this.TblLayoutPanelMenu);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(648, 47);
+            this.panel1.Size = new System.Drawing.Size(786, 47);
             this.panel1.TabIndex = 0;
             // 
             // TblLayoutPanelMenu
             // 
-            this.TblLayoutPanelMenu.ColumnCount = 3;
-            this.TblLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TblLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TblLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 220F));
+            this.TblLayoutPanelMenu.ColumnCount = 4;
+            this.TblLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.64267F));
+            this.TblLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.35733F));
+            this.TblLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 196F));
+            this.TblLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 178F));
             this.TblLayoutPanelMenu.Controls.Add(this.PnlDashbord, 0, 0);
             this.TblLayoutPanelMenu.Controls.Add(this.PnlReport, 1, 0);
-            this.TblLayoutPanelMenu.Controls.Add(this.PnlSettings, 2, 0);
+            this.TblLayoutPanelMenu.Controls.Add(this.PnlRecharge, 2, 0);
+            this.TblLayoutPanelMenu.Controls.Add(this.PnlSettings, 3, 0);
             this.TblLayoutPanelMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TblLayoutPanelMenu.Location = new System.Drawing.Point(0, 0);
             this.TblLayoutPanelMenu.Name = "TblLayoutPanelMenu";
             this.TblLayoutPanelMenu.RowCount = 1;
             this.TblLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TblLayoutPanelMenu.Size = new System.Drawing.Size(648, 47);
+            this.TblLayoutPanelMenu.Size = new System.Drawing.Size(786, 47);
             this.TblLayoutPanelMenu.TabIndex = 0;
             // 
             // PnlDashbord
@@ -130,7 +138,7 @@
             this.PnlDashbord.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlDashbord.Location = new System.Drawing.Point(3, 3);
             this.PnlDashbord.Name = "PnlDashbord";
-            this.PnlDashbord.Size = new System.Drawing.Size(208, 41);
+            this.PnlDashbord.Size = new System.Drawing.Size(202, 41);
             this.PnlDashbord.TabIndex = 0;
             this.PnlDashbord.Click += new System.EventHandler(this.NavigationControles_Click);
             // 
@@ -165,9 +173,9 @@
             this.PnlReport.Controls.Add(this.LblReport);
             this.PnlReport.Controls.Add(this.PcbReport);
             this.PnlReport.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlReport.Location = new System.Drawing.Point(217, 3);
+            this.PnlReport.Location = new System.Drawing.Point(211, 3);
             this.PnlReport.Name = "PnlReport";
-            this.PnlReport.Size = new System.Drawing.Size(208, 41);
+            this.PnlReport.Size = new System.Drawing.Size(197, 41);
             this.PnlReport.TabIndex = 1;
             this.PnlReport.Click += new System.EventHandler(this.NavigationControles_Click);
             // 
@@ -197,16 +205,54 @@
             this.PcbReport.TabStop = false;
             this.PcbReport.Click += new System.EventHandler(this.NavigationControles_Click);
             // 
+            // PnlRecharge
+            // 
+            this.PnlRecharge.Controls.Add(this.LblRecharge);
+            this.PnlRecharge.Controls.Add(this.PcbRecharge);
+            this.PnlRecharge.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlRecharge.Location = new System.Drawing.Point(414, 3);
+            this.PnlRecharge.Name = "PnlRecharge";
+            this.PnlRecharge.Size = new System.Drawing.Size(190, 41);
+            this.PnlRecharge.TabIndex = 2;
+            this.PnlRecharge.Click += new System.EventHandler(this.NavigationControles_Click);
+            // 
+            // LblRecharge
+            // 
+            this.LblRecharge.AutoSize = true;
+            this.LblRecharge.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LblRecharge.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRecharge.ForeColor = System.Drawing.Color.Black;
+            this.LblRecharge.Location = new System.Drawing.Point(59, 10);
+            this.LblRecharge.Name = "LblRecharge";
+            this.LblRecharge.Size = new System.Drawing.Size(82, 20);
+            this.LblRecharge.TabIndex = 2;
+            this.LblRecharge.Text = "Recharge";
+            this.LblRecharge.Click += new System.EventHandler(this.NavigationControles_Click);
+            this.LblRecharge.MouseEnter += new System.EventHandler(this.Menu_MouseEnter);
+            this.LblRecharge.MouseLeave += new System.EventHandler(this.Menu_MouseLeave);
+            // 
+            // PcbRecharge
+            // 
+            this.PcbRecharge.Image = global::EasyToGoBq.Properties.Resources.settings;
+            this.PcbRecharge.Location = new System.Drawing.Point(10, 3);
+            this.PcbRecharge.Name = "PcbRecharge";
+            this.PcbRecharge.Size = new System.Drawing.Size(35, 35);
+            this.PcbRecharge.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PcbRecharge.TabIndex = 1;
+            this.PcbRecharge.TabStop = false;
+            this.PcbRecharge.Click += new System.EventHandler(this.NavigationControles_Click);
+            // 
             // PnlSettings
             // 
             this.PnlSettings.Controls.Add(this.LblSettings);
             this.PnlSettings.Controls.Add(this.PcbSettings);
-            this.PnlSettings.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlSettings.Location = new System.Drawing.Point(431, 3);
+            this.PnlSettings.Location = new System.Drawing.Point(610, 3);
             this.PnlSettings.Name = "PnlSettings";
-            this.PnlSettings.Size = new System.Drawing.Size(214, 41);
-            this.PnlSettings.TabIndex = 2;
+            this.PnlSettings.Size = new System.Drawing.Size(172, 41);
+            this.PnlSettings.TabIndex = 3;
             this.PnlSettings.Click += new System.EventHandler(this.NavigationControles_Click);
+            this.PnlSettings.MouseEnter += new System.EventHandler(this.Menu_MouseEnter);
+            this.PnlSettings.MouseLeave += new System.EventHandler(this.Menu_MouseLeave);
             // 
             // LblSettings
             // 
@@ -214,10 +260,10 @@
             this.LblSettings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblSettings.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblSettings.ForeColor = System.Drawing.Color.Black;
-            this.LblSettings.Location = new System.Drawing.Point(59, 10);
+            this.LblSettings.Location = new System.Drawing.Point(68, 10);
             this.LblSettings.Name = "LblSettings";
             this.LblSettings.Size = new System.Drawing.Size(86, 20);
-            this.LblSettings.TabIndex = 2;
+            this.LblSettings.TabIndex = 4;
             this.LblSettings.Text = "Paramètre";
             this.LblSettings.Click += new System.EventHandler(this.NavigationControles_Click);
             this.LblSettings.MouseEnter += new System.EventHandler(this.Menu_MouseEnter);
@@ -226,13 +272,15 @@
             // PcbSettings
             // 
             this.PcbSettings.Image = global::EasyToGoBq.Properties.Resources.settings;
-            this.PcbSettings.Location = new System.Drawing.Point(10, 3);
+            this.PcbSettings.Location = new System.Drawing.Point(13, 3);
             this.PcbSettings.Name = "PcbSettings";
             this.PcbSettings.Size = new System.Drawing.Size(35, 35);
             this.PcbSettings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PcbSettings.TabIndex = 1;
+            this.PcbSettings.TabIndex = 3;
             this.PcbSettings.TabStop = false;
             this.PcbSettings.Click += new System.EventHandler(this.NavigationControles_Click);
+            this.PcbSettings.MouseEnter += new System.EventHandler(this.Menu_MouseEnter);
+            this.PcbSettings.MouseLeave += new System.EventHandler(this.Menu_MouseLeave);
             // 
             // PnlMain
             // 
@@ -269,6 +317,7 @@
             this.Controls.Add(this.PnlMain);
             this.Controls.Add(this.PnlHeader);
             this.Controls.Add(this.StatusStrip);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1000, 550);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -285,6 +334,9 @@
             this.PnlReport.ResumeLayout(false);
             this.PnlReport.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcbReport)).EndInit();
+            this.PnlRecharge.ResumeLayout(false);
+            this.PnlRecharge.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PcbRecharge)).EndInit();
             this.PnlSettings.ResumeLayout(false);
             this.PnlSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcbSettings)).EndInit();
@@ -305,14 +357,17 @@
         private System.Windows.Forms.TableLayoutPanel TblLayoutPanelMenu;
         private System.Windows.Forms.Panel PnlDashbord;
         private System.Windows.Forms.Panel PnlReport;
-        private System.Windows.Forms.Panel PnlSettings;
+        private System.Windows.Forms.Panel PnlRecharge;
         private System.Windows.Forms.PictureBox PcbDashbord;
         private System.Windows.Forms.PictureBox PcbReport;
-        private System.Windows.Forms.PictureBox PcbSettings;
+        private System.Windows.Forms.PictureBox PcbRecharge;
         private System.Windows.Forms.Label LblDashbord;
         private System.Windows.Forms.Label LblReport;
-        private System.Windows.Forms.Label LblSettings;
+        private System.Windows.Forms.Label LblRecharge;
         private System.Windows.Forms.Panel PnlConnection;
         private System.Windows.Forms.Label LblConnection;
+        private System.Windows.Forms.Panel PnlSettings;
+        private System.Windows.Forms.Label LblSettings;
+        private System.Windows.Forms.PictureBox PcbSettings;
     }
 }

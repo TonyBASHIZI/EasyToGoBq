@@ -240,6 +240,38 @@ namespace EasyToGoBq.Classes
 
             return c;
         }
+        public string getOperas(string filt)
+        {
+
+            string c = "";
+            try
+            {
+
+                InitializeConnection();
+
+                string q = "SELECT COUNT(id) as nb FROM `transaction` WHERE montant = '"+filt+"'";
+                cmd = new MySqlCommand(q, con);
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    c = dr.GetString("nb");
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                cmd.Dispose();
+                con.Close();
+            }
+
+
+            return c;
+        }
 
         public string getCompagnieEtbq()
         {
@@ -393,7 +425,7 @@ namespace EasyToGoBq.Classes
 
                 InitializeConnection();
 
-                string q = "select SUM(solde) as nb from agent";
+                string q = "select SUM(montant) as nb from rechargehistory";
                 cmd = new MySqlCommand(q, con);
                 dr = cmd.ExecuteReader();
                 if (dr.Read())
@@ -491,6 +523,65 @@ namespace EasyToGoBq.Classes
 
             return c;
         }
+
+        public void Recharge(string code, string montant)
+        {
+        
+            InitializeConnection();
+            try
+            {
+                string q = "update agent set solde=@solde where matricule=@matricule";
+                cmd = new MySqlCommand(q, con);
+                cmd.Parameters.Add(new MySqlParameter("@matricule", code));
+                cmd.Parameters.Add(new MySqlParameter("@solde", montant));
+               
+
+                if (cmd.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Recharge effectué avec succes!!");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                cmd.Dispose();
+                con.Close();
+            }
+
+        }
+        public void Recherche(DataGridView data, string code)
+        {
+
+            InitializeConnection();
+
+            try
+            {
+                using (cmd = con.CreateCommand())
+                {
+                    cmd.CommandText = " SELECT * FROM  agent WHERE matricule='"+code+"'";
+                    dt = new MySqlDataAdapter((MySqlCommand)cmd);
+                    DataSet ds = new DataSet();
+                    dt.Fill(ds);
+                    data.DataSource = ds.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                cmd.Dispose();
+                con.Close();
+
+            }
+
+        }
+
         #endregion
     }
 }
