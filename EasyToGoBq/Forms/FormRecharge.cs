@@ -7,7 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using EasyToGoBq.Classes;
+=======
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
 
 namespace EasyToGoBq.Forms
 {
@@ -18,6 +21,7 @@ namespace EasyToGoBq.Forms
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void initial()
         {
             TxtMatricule.Text = "";
@@ -35,6 +39,11 @@ namespace EasyToGoBq.Forms
         {
             Glossaire.Instance.GetDatas(GridView, "matricule,nom,postnom,prenom,tel,email,adresse,solde", "agent");
             
+=======
+        private void FormRecharge_Load(object sender, EventArgs e)
+        {
+
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
         }
 
         private void RechargeControles_Click(object sender, EventArgs e)
@@ -43,14 +52,20 @@ namespace EasyToGoBq.Forms
             {
                 case "Valider":
                     /// TODO : Function to search agent to recharge
+<<<<<<< HEAD
                     Glossaire.Instance.Recherche(GridView, TxtRecherche.Text);
+=======
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
                     break;
 
                 case "Recharge":
                     /// TODO : Function to validate recharge
+<<<<<<< HEAD
                     Glossaire.Instance.Recharge(TxtMatricule.Text, TxtSolde.Text);
                     Glossaire.Instance.GetDatas(GridView, "matricule,nom,postnom,prenom,tel,email,adresse,solde", "agent");
                     initial();
+=======
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
                     break;
 
 
@@ -58,6 +73,7 @@ namespace EasyToGoBq.Forms
                     break;
             }
         }
+<<<<<<< HEAD
 
         private void GridView_DoubleClick(object sender, EventArgs e)
         {
@@ -75,5 +91,7 @@ namespace EasyToGoBq.Forms
         {
             Glossaire.Instance.GetDatas(GridView, "matricule,nom,postnom,prenom,tel,email,adresse,solde", "agent");
         }
+=======
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
     }
 }

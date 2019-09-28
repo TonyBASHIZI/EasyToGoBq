@@ -28,10 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRecharge));
+=======
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.PnlRecharge = new System.Windows.Forms.Panel();
             this.LblRecharge = new System.Windows.Forms.Label();
@@ -56,24 +62,33 @@
             this.LblValider = new System.Windows.Forms.Label();
             this.TxtRecherche = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.TxtEmail = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+=======
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.groupBox1.SuspendLayout();
             this.PnlRecharge.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridView)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.PnlValider.SuspendLayout();
+<<<<<<< HEAD
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+=======
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+<<<<<<< HEAD
             this.groupBox1.Controls.Add(this.TxtEmail);
             this.groupBox1.Controls.Add(this.label9);
+=======
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.groupBox1.Controls.Add(this.PnlRecharge);
             this.groupBox1.Controls.Add(this.TxtSolde);
             this.groupBox1.Controls.Add(this.label6);
@@ -104,9 +119,15 @@
             this.PnlRecharge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PnlRecharge.Controls.Add(this.LblRecharge);
             this.PnlRecharge.Cursor = System.Windows.Forms.Cursors.Hand;
+<<<<<<< HEAD
             this.PnlRecharge.Location = new System.Drawing.Point(587, 142);
             this.PnlRecharge.Name = "PnlRecharge";
             this.PnlRecharge.Size = new System.Drawing.Size(151, 35);
+=======
+            this.PnlRecharge.Location = new System.Drawing.Point(417, 122);
+            this.PnlRecharge.Name = "PnlRecharge";
+            this.PnlRecharge.Size = new System.Drawing.Size(200, 35);
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.PnlRecharge.TabIndex = 18;
             this.PnlRecharge.Click += new System.EventHandler(this.RechargeControles_Click);
             // 
@@ -117,7 +138,11 @@
             this.LblRecharge.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblRecharge.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblRecharge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(23)))), ((int)(((byte)(22)))));
+<<<<<<< HEAD
             this.LblRecharge.Location = new System.Drawing.Point(28, 8);
+=======
+            this.LblRecharge.Location = new System.Drawing.Point(55, 7);
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.LblRecharge.Name = "LblRecharge";
             this.LblRecharge.Size = new System.Drawing.Size(86, 18);
             this.LblRecharge.TabIndex = 0;
@@ -126,7 +151,11 @@
             // 
             // TxtSolde
             // 
+<<<<<<< HEAD
             this.TxtSolde.Location = new System.Drawing.Point(470, 104);
+=======
+            this.TxtSolde.Location = new System.Drawing.Point(470, 85);
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.TxtSolde.Name = "TxtSolde";
             this.TxtSolde.Size = new System.Drawing.Size(164, 22);
             this.TxtSolde.TabIndex = 13;
@@ -134,7 +163,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
+<<<<<<< HEAD
             this.label6.Location = new System.Drawing.Point(377, 104);
+=======
+            this.label6.Location = new System.Drawing.Point(377, 85);
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 17);
             this.label6.TabIndex = 12;
@@ -142,7 +175,11 @@
             // 
             // TxtTelephone
             // 
+<<<<<<< HEAD
             this.TxtTelephone.Location = new System.Drawing.Point(470, 47);
+=======
+            this.TxtTelephone.Location = new System.Drawing.Point(470, 57);
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.TxtTelephone.Name = "TxtTelephone";
             this.TxtTelephone.ReadOnly = true;
             this.TxtTelephone.Size = new System.Drawing.Size(164, 22);
@@ -151,7 +188,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
+<<<<<<< HEAD
             this.label7.Location = new System.Drawing.Point(377, 47);
+=======
+            this.label7.Location = new System.Drawing.Point(377, 57);
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 17);
             this.label7.TabIndex = 10;
@@ -159,7 +200,11 @@
             // 
             // TxtAdresse
             // 
+<<<<<<< HEAD
             this.TxtAdresse.Location = new System.Drawing.Point(470, 19);
+=======
+            this.TxtAdresse.Location = new System.Drawing.Point(470, 29);
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.TxtAdresse.Name = "TxtAdresse";
             this.TxtAdresse.ReadOnly = true;
             this.TxtAdresse.Size = new System.Drawing.Size(164, 22);
@@ -168,7 +213,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
+<<<<<<< HEAD
             this.label8.Location = new System.Drawing.Point(377, 19);
+=======
+            this.label8.Location = new System.Drawing.Point(377, 29);
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(64, 17);
             this.label8.TabIndex = 8;
@@ -261,6 +310,7 @@
             this.GridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.GridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+<<<<<<< HEAD
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -269,10 +319,21 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+=======
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GridView.Location = new System.Drawing.Point(3, 85);
             this.GridView.Name = "GridView";
+<<<<<<< HEAD
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -291,6 +352,24 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.panel1);
+=======
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
+            this.GridView.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.GridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GridView.Size = new System.Drawing.Size(738, 210);
+            this.GridView.TabIndex = 3;
+            // 
+            // groupBox3
+            // 
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.groupBox3.Controls.Add(this.PnlValider);
             this.groupBox3.Controls.Add(this.TxtRecherche);
             this.groupBox3.Controls.Add(this.label5);
@@ -308,7 +387,11 @@
             this.PnlValider.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PnlValider.Controls.Add(this.LblValider);
             this.PnlValider.Cursor = System.Windows.Forms.Cursors.Hand;
+<<<<<<< HEAD
             this.PnlValider.Location = new System.Drawing.Point(485, 16);
+=======
+            this.PnlValider.Location = new System.Drawing.Point(497, 16);
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.PnlValider.Name = "PnlValider";
             this.PnlValider.Size = new System.Drawing.Size(117, 27);
             this.PnlValider.TabIndex = 19;
@@ -344,6 +427,7 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Rechercher : ";
             // 
+<<<<<<< HEAD
             // TxtEmail
             // 
             this.TxtEmail.Location = new System.Drawing.Point(470, 75);
@@ -384,6 +468,8 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+=======
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             // FormRecharge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -412,8 +498,11 @@
             this.groupBox3.PerformLayout();
             this.PnlValider.ResumeLayout(false);
             this.PnlValider.PerformLayout();
+<<<<<<< HEAD
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+=======
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.ResumeLayout(false);
 
         }
@@ -444,9 +533,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel PnlValider;
         private System.Windows.Forms.Label LblValider;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox TxtEmail;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+=======
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
     }
 }

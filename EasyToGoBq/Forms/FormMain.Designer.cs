@@ -43,12 +43,18 @@
             this.PnlRecharge = new System.Windows.Forms.Panel();
             this.LblRecharge = new System.Windows.Forms.Label();
             this.PcbRecharge = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.PnlSettings = new System.Windows.Forms.Panel();
             this.LblSettings = new System.Windows.Forms.Label();
             this.PcbSettings = new System.Windows.Forms.PictureBox();
+=======
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.PnlMain = new System.Windows.Forms.Panel();
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.LblStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.PnlSettings = new System.Windows.Forms.Panel();
+            this.LblSettings = new System.Windows.Forms.Label();
+            this.PcbSettings = new System.Windows.Forms.PictureBox();
             this.PnlHeader.SuspendLayout();
             this.PnlConnection.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -59,9 +65,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.PcbReport)).BeginInit();
             this.PnlRecharge.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcbRecharge)).BeginInit();
+<<<<<<< HEAD
+=======
+            this.StatusStrip.SuspendLayout();
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.PnlSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcbSettings)).BeginInit();
-            this.StatusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlHeader
@@ -118,7 +127,11 @@
             this.TblLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.64267F));
             this.TblLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.35733F));
             this.TblLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 196F));
+<<<<<<< HEAD
             this.TblLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 178F));
+=======
+            this.TblLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177F));
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.TblLayoutPanelMenu.Controls.Add(this.PnlDashbord, 0, 0);
             this.TblLayoutPanelMenu.Controls.Add(this.PnlReport, 1, 0);
             this.TblLayoutPanelMenu.Controls.Add(this.PnlRecharge, 2, 0);
@@ -138,7 +151,11 @@
             this.PnlDashbord.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlDashbord.Location = new System.Drawing.Point(3, 3);
             this.PnlDashbord.Name = "PnlDashbord";
+<<<<<<< HEAD
             this.PnlDashbord.Size = new System.Drawing.Size(202, 41);
+=======
+            this.PnlDashbord.Size = new System.Drawing.Size(203, 41);
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.PnlDashbord.TabIndex = 0;
             this.PnlDashbord.Click += new System.EventHandler(this.NavigationControles_Click);
             // 
@@ -173,7 +190,11 @@
             this.PnlReport.Controls.Add(this.LblReport);
             this.PnlReport.Controls.Add(this.PcbReport);
             this.PnlReport.Dock = System.Windows.Forms.DockStyle.Fill;
+<<<<<<< HEAD
             this.PnlReport.Location = new System.Drawing.Point(211, 3);
+=======
+            this.PnlReport.Location = new System.Drawing.Point(212, 3);
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.PnlReport.Name = "PnlReport";
             this.PnlReport.Size = new System.Drawing.Size(197, 41);
             this.PnlReport.TabIndex = 1;
@@ -210,7 +231,11 @@
             this.PnlRecharge.Controls.Add(this.LblRecharge);
             this.PnlRecharge.Controls.Add(this.PcbRecharge);
             this.PnlRecharge.Dock = System.Windows.Forms.DockStyle.Fill;
+<<<<<<< HEAD
             this.PnlRecharge.Location = new System.Drawing.Point(414, 3);
+=======
+            this.PnlRecharge.Location = new System.Drawing.Point(415, 3);
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.PnlRecharge.Name = "PnlRecharge";
             this.PnlRecharge.Size = new System.Drawing.Size(190, 41);
             this.PnlRecharge.TabIndex = 2;
@@ -242,11 +267,45 @@
             this.PcbRecharge.TabStop = false;
             this.PcbRecharge.Click += new System.EventHandler(this.NavigationControles_Click);
             // 
+<<<<<<< HEAD
+=======
+            // PnlMain
+            // 
+            this.PnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlMain.Location = new System.Drawing.Point(0, 47);
+            this.PnlMain.Name = "PnlMain";
+            this.PnlMain.Size = new System.Drawing.Size(984, 462);
+            this.PnlMain.TabIndex = 1;
+            // 
+            // StatusStrip
+            // 
+            this.StatusStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(64)))), ((int)(((byte)(2)))));
+            this.StatusStrip.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LblStatus});
+            this.StatusStrip.Location = new System.Drawing.Point(0, 509);
+            this.StatusStrip.Name = "StatusStrip";
+            this.StatusStrip.Size = new System.Drawing.Size(984, 22);
+            this.StatusStrip.TabIndex = 2;
+            this.StatusStrip.Text = "Status";
+            // 
+            // LblStatus
+            // 
+            this.LblStatus.ForeColor = System.Drawing.Color.White;
+            this.LblStatus.Name = "LblStatus";
+            this.LblStatus.Size = new System.Drawing.Size(74, 17);
+            this.LblStatus.Text = "Bienvenue";
+            // 
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             // PnlSettings
             // 
             this.PnlSettings.Controls.Add(this.LblSettings);
             this.PnlSettings.Controls.Add(this.PcbSettings);
+<<<<<<< HEAD
             this.PnlSettings.Location = new System.Drawing.Point(610, 3);
+=======
+            this.PnlSettings.Location = new System.Drawing.Point(611, 3);
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.PnlSettings.Name = "PnlSettings";
             this.PnlSettings.Size = new System.Drawing.Size(172, 41);
             this.PnlSettings.TabIndex = 3;
@@ -281,6 +340,7 @@
             this.PcbSettings.Click += new System.EventHandler(this.NavigationControles_Click);
             this.PcbSettings.MouseEnter += new System.EventHandler(this.Menu_MouseEnter);
             this.PcbSettings.MouseLeave += new System.EventHandler(this.Menu_MouseLeave);
+<<<<<<< HEAD
             // 
             // PnlMain
             // 
@@ -308,6 +368,8 @@
             this.LblStatus.Name = "LblStatus";
             this.LblStatus.Size = new System.Drawing.Size(74, 17);
             this.LblStatus.Text = "Bienvenue";
+=======
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             // 
             // FormMain
             // 
@@ -337,11 +399,14 @@
             this.PnlRecharge.ResumeLayout(false);
             this.PnlRecharge.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcbRecharge)).EndInit();
+<<<<<<< HEAD
+=======
+            this.StatusStrip.ResumeLayout(false);
+            this.StatusStrip.PerformLayout();
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
             this.PnlSettings.ResumeLayout(false);
             this.PnlSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcbSettings)).EndInit();
-            this.StatusStrip.ResumeLayout(false);
-            this.StatusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

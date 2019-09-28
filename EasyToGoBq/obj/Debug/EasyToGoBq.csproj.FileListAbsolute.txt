@@ -60,6 +60,9 @@ D:\EasyToGoBq\EasyToGoBq\obj\Debug\RdlCompile.compiled
 D:\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormTable.resources
 D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormRecharge.resources
 D:\Ardin\Projects\Desktop\C#\EasyToGoBanque\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormTable.resources
+<<<<<<< HEAD
 D:\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormRecharge.resources
 D:\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.FormListener.resources
 D:\EasyToGoBq\EasyToGoBq\obj\Debug\EasyToGoBq.Forms.Views.UsListerner.resources
+=======
+>>>>>>> ab255756f7385a16265ac778b9199dfb1ae78ece
